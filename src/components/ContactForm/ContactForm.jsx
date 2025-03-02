@@ -16,7 +16,7 @@ function ContactForm() {
     number: Yup.string()
       .min(3, "Too Short!")
       .max(50, "Too Long!")
-      .matches(/^\d{3}-\d{2}-\d{2}$/, "Phone must be in 777-77-77 format")
+      .matches(/^\d{3}-\d{3}-\d{4}$/, "Phone must be in 777-777-7777 format")
       .required("Required"),
   });
 
